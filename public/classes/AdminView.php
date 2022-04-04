@@ -33,12 +33,12 @@ class AdminView extends Components\Component {
             <tbody>
             <tr id="password" class="user-pass1-wrap">
                 <th>
-                    <label for="guest-user">Guest</label>
+                    <label for="guest-user"><?php _e("Guest", Plugin::DOMAIN); ?></label>
                 </th>
                 <td>
                     <label for="guest-user">
 	                    <input type="hidden" name="is_guest_user_request" value="it-is" />
-                        <input type="checkbox" name="is_guest_user" id="guest-user" value="true" <?= $checked ? "checked" : "" ?> /> If checked, user cannot sign in.
+                        <input type="checkbox" name="is_guest_user" id="guest-user" value="true" <?= $checked ? "checked" : "" ?> /> <?php _e("If checked, user cannot sign in.", Plugin::DOMAIN); ?>
                     </label>
                 </td>
             </tr>

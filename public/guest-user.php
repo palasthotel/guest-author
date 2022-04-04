@@ -3,11 +3,15 @@
 /**
  *
  * Plugin Name: Guest User
- * Plugin URI: https://campact.de
+ * Plugin URI: https://github.com/palasthotel/guest-user
  * Description: Label accounts as guests and prevent the login
  * Version: 1.0.0
  * Author: Palasthotel by Edward <edward.bock@palasthotel.de>
  * Author URI: https://palasthotel.de
+ * Requires PHP: 7.4
+ * Text Domain: guest-user
+ * @copyright Copyright (c) 2022, Palasthotel
+ * @package Palasthotel\WordPress\GuestUser
  *
  */
 
@@ -28,6 +32,8 @@ class Plugin extends Components\Plugin {
 	const USER_META_IS_GUEST_VALUE = "yes";
 
 	function onCreate() {
+
+		$this->loadTextdomain(Plugin::DOMAIN, "languages");
 
 		$this->repository = new Repository();
 		$this->security   = new Security($this);
