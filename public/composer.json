@@ -1,0 +1,9 @@
+{
+  "name": "palasthotel/guest-user",
+  "description": "",
+  "autoload": {
+    "psr-4": {
+      "Palasthotel\\WordPress\\GuestUser\\": "classes"
+    }
+  }
+}
