@@ -34,7 +34,7 @@ class AdminView extends Components\Component {
                 <tbody>
                 <tr>
                     <th>
-                        <label for="guest-user"><?php _e("Guest", Plugin::DOMAIN); ?></label>
+                        <label for="guest-user"><?php _e("Is guest", Plugin::DOMAIN); ?></label>
                     </th>
                     <td>
                         <label for="guest-user">
